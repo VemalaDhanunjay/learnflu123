@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1,maximum-scale=1, user-scalable=no,width=device-width">
+<title>Instagram App - Notifications - UI Design</title>
+<link href="css/bootstap.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/custom.css" rel="stylesheet" type="text/css"/>
+<style>
+    *
+{
+    margin-left:0;
+    padding: 0;
+    outline: none;
+}
+
+body
+{
+    font-family: 'Roboto',sans-serif;
+    background-size: 100% auto;
+    background-color: #fff;
+}
+
+:root
+{
+    --app-primary-text-colour: #010101;
+    --app-secondary-text-color: #737373;
+    --app-img-border-colour:#FFF;
+}
+
+#ig_app
+{
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+#ig_app
+{
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+#ig_header
+{
+    position: fixed;
+    top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: var(--app-primary-text-colour);
+    background-color: #FFF;
+    z-index: 10;
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+#in_all_caught,#in_all_caught i
+{
+position: relative;
+
+background: linear-gradient(45deg, #f09433 0,#e6683c 25%,#dc2743 50%, cc2366 75%,#bc1888 100%);
+}
+#ig_activity
+{
+font-size: 15.5px;
+}
+#ig_activity.row
+{
+margin-bottom: 25px;
+}
+#in_all_caught
+{
+display: block;
+width: 48px;
+
+height: 48px;
+
+line-height: 48px;
+
+text-align: center;
+
+border-radius: 100%;
+
+font-size: 20px;
+}
+#in_all_caught::before
+{
+position: absolute;
+
+background-color: #fff;
+
+content: '';
+
+display: block;
+
+width: 100%;
+
+height: 100%;
+
+transform: scale(.9);
+
+border-radius: 100%;
+
+z-index: 9;
+}
+#in_all_caught i
+{
+z-index: 10;
+-webkit-background-clip: text;
+-webkit-text-fill-colour: transparent;
+}
+#ig_activity>span
+
+{
+
+font-size: 18.5px;
+
+font-weight: 600;
+
+display: block;
+
+margin-bottom: 18px;
+
+}
+
+#ig_activity img.ia_user_img
+
+{
+
+width: 48px;
+
+border-radius: 100%;
+
+}
+
+#ig_activity.ia_user
+{
+
+font-weight: 600;
+
+}
+
+#ig_activity.ia_time
+
+{
+color: rgba(0,0,0,.75);
+}
+#ig_activity button
+
+{
+
+border: none;
+
+background-color: #0095f6;
+
+color: #fff;
+
+padding: 8px 16px;
+
+font-size: 14px;
+
+font-weight: 500;
+
+letter-spacing: .3px;
+
+border-radius: 8px;
+
+}
+
+#ig_activity img.ia_post
+
+{
+width: 50px;
+}
+#ig_activity.ia_n_imgs
+
+{
+
+position: relative; }
+
+#ig_activity.ia_n_imgs img
+
+{
+
+position: absolute;
+
+width: 42px;
+
+border: 2.5px solid #fff;
+
+}
+
+#ig_activity.ia_n_imgs img:last-child
+
+{
+
+margin-top: 12px;
+
+margin-left: 8px;
+
+}
+
+#ig_footer
+{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+#ig_footer ul li
+{
+    float: left;
+    width:20%;
+    list-style: none;
+    text-align: center;
+    font-style: 30px;
+    font-weight: 700;
+}
+
+#ig_footer ul li i.fa-heart-o
+{
+    text-shadow: 1px 0 0 #000;
+}
+
+#ig_footer ul li img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-top: -4px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.35),insert 0 0 5px rgba(0,0,0,.9);
+}
+</style>
+</head>
+<body>
+
+
+
+   <div class="container-fluid">
+        <div id="ig_app" class="row">
+            <section id="ig_header" class="col-12">
+                <div class="row">
+                    <div class="col-8" style="margin-left:10px;">
+                        Notifications
+                    </div>
+                </div>
+                </div>          
+              </section>
+              <section id="ig_activity" class="col-12 p-3">
+                <div class="row">
+                    <div class="col-2 align-self-center">
+                        <span id="in_all_caught">
+                            <i class="fa fa-check"></i></i>
+                        </span>
+                        <div class="col-10 align-self-center">
+                            <span id="ia_user" style="margin-left:10px;">You're all caught up</span>
+                        </div>
+                </div> 
+                <span style="margin-left:10px;">Today</span>
+
+<div class="row">
+
+<div class="col-2 align-self-center">
+
+<img src="imgs/2.jpg" alt="" class="ia_user_img">
+
+</div>
+
+<div class="col-7 align-self-center">
+
+<span class="ia_user" style="margin-left:10px;">appbrann</span> started following you.
+
+</div>
+
+<span class="ia_time" style="margin-left:10px;">1h</span>
+
+<div class="col-3 align-self-center text-right">
+
+<button class="ia_btn_follow_toggle" type="button" style="margin-left:10px;">Follow</button>
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="col-2 align-self-center">
+
+<img src="imgs/2.jpg" alt="" class="ia_user_img">
+
+</div>
+
+<div class="col-7 align-self-center">
+
+<span class="ia_user" style="margin-left:10px;">appbrainn</span> liked your post.
+
+<span class="ia_time" style="margin-left:10px;">3h</span>
+
+</div>
+
+<div class="col-3 align-self-top text-right">
+
+<img src="imgs/post-2.jpg" alt="" class="ia_post">
+
+</div>
+
+</div>
+<div class="row">
+
+<div class="col-2 align-self-top ia_n_imgs">
+
+<img src="imgs/2.jpg" alt="" class="ia_user_img"> <img src="imgs/3.jpg" alt="" class="ia_user_img">
+
+</div>
+
+<div class="col-7 align-self-center">
+
+<span class="ia_user" style="margin-left:10px;">appbrainn, blessonkunjumon</span> and 
+<span class="ia_user" style="margin-left:10px;">8 others</span> liked your post.
+
+<span class="ia_time">3h</span>
+
+</div>
+
+<div class="col-3 align-self-top text-right">
+
+<img src="imgs/post-3.jpg" alt="" class="ia_post">
+
+</div>
+</div>
+
+<div class="row">
+
+<div class="col-2 align-self-center">
+
+<img src="imgs/4.jpg" alt="" class="ia_user_img">
+
+</div>
+
+<div class="col-7 align-self-center">
+
+<span class="ia_user" style="margin-left:10px;">deep1233689</span> commented: &#127775 nice ui
+
+<span class="ia_time" style="margin-left:10px;">10h</span>
+
+</div>
+
+<div class="col-3 align-self-top text-right"> <img src="imgs/post
+-1.jpg"alt="" class="ia_post">
+</div>
+</div>
+
+<span style="margin-left:10px;">This Week</span>
+<div class="row">
+    <div class="col-2 align-self-center">
+        <img src="imgs/6.jpg" alt="" class="ia_user_img">
+        </div>
+        <div class="col-7 align-self-center">
+            <span class="ia_user" style="margin-left:10px;">ui.design</span> started following you.
+            <span class="'ia_time" style="margin-left:10px;">1d</span>
+        </div>
+        <div class="col-3 align-self-center text-right">
+            <button class="ia_btn_follow_toggle" type="button" style="margin-left:10px;">Follow</button>
+        </div>
+</div>
+
+<div class="row">
+    <div class="col-2 align-self-center">
+        <img src="imgs/7.jpg"  alt="" class="ia_user_img">
+    </div>
+    <div class="col-7 align-self-center">
+        <span class="ia_user" style="margin-left:10px;">web.development.ux.design</span> started following you.
+        <span class="ia_time" style="margin-left:10px;">1d</span>
+    </div>
+    <div class="col-3 align-self-center text-right">
+        <button class="ia_btn_follow_toggle" type="button" style="margin-left:10px;">Follow</button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-2 align-self-center">
+        <img src="imgs/8.jpg" alt="" class="ia_user_img">
+    </div>
+    <div class="col-7 align-self-center">
+        <span class="ia_user" style="margin-left:10px;">app.cordova</span>liked your post.
+        <span class="ia_time" style="margin-left:10px;">2d</span>
+    </div>
+    <div class="col-3 align-self-center text-right">
+        <img src="imgs/post_2.jpg"  alt="" class="ia_post">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-2 align-self-top ia_n_imgs">
+        <img src="imgs/8.jpg"  alt="" class="ia_user_img">
+        <img src="imgs/9.jpg"  alt="" class="ia_user_img">
+    </div>
+    <div class="col-7 align-self-center">
+        <span class="ia_user" style="margin-left:10px;">app.cordova, blessonkunjumon</span> and
+        <span class="ia_user" style="margin-left:10px;">8 others</span> liked your post.
+        <span class="ia_time" style="margin-left:10px;">2d</span>
+    </div>
+    <div class="col-3 align-self-center text-right">
+        <img src="imgs/post_3.jpg"  alt="" class="ia_post">
+    </div>
+</div>
+<div class="row">
+    <div class="col-2 align-self-center">
+        <img src="imgs/10.jpg"  alt="" class="ia_user_img">
+    </div>
+    <div class="col-7 align-self-center">
+        <span class="ia_user" style="margin-left:10px;">python.prog</span>liked your post.
+        <span class="ia_time" style="margin-left:10px;">2d</span>
+    </div>
+    <div class="col-3 align-self-center text-right">
+        <img src="imgs/post_1.jpg"  alt="" class="ia_post">
+    </div>
+</div>
+</section>
+
+<section id="ig_footer" class="justify-content-center align-self-center">
+    <ul>
+        <li>
+            <i class="fa fa-home"></i>
+        </li>
+        <li>
+            <i class="fa fa-search"></i>
+        </li>
+        <li>
+            <i class="fa fa-video-camera"></i>
+        </li>
+        <li>
+            <i class="fa fa-video-heart-o"></i>
+        </li>
+        <li>
+            <img src="img2.jpeg" alt="">
+        </li>
+    </ul>
+</section>
+</div>
+</div>
