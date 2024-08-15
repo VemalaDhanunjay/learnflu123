@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -600,19 +599,7 @@ body{
     }
 }
 </script>
-<script>
-    fetch('v1.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('abhi').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading HTML:', error));
-</script>
-<script>
-    function func(){
-        window.open("notification.html");
-    }
-</script>
+    
     
 </head>
 <body>
@@ -643,7 +630,7 @@ body{
                     <i class="fa-regular fa-message"></i>
                     <a href="#">Messages</a>
                 </div>
-                <div class="sub-section" id="hidden2" onclick="func()">
+                <div class="sub-section" id="hidden2">
                     <i class="fa-regular fa-heart"></i>
                     <a href="#">Notification</a>
                 </div>
@@ -653,9 +640,9 @@ body{
                 </div>
                 <div class="sub-section">
                     <div class="profile-img">
-                        <img src="img2.jpeg" id="abhi">
+                        <img src="img2.jpeg" alt="">
                     </div>
-                    <a href="v1.html">Profile</a>
+                    <a href="#">Profile</a>
                 </div>
                 <div class="menu-section " id="hidden">
                     <i class="fa-solid fa-bars"></i>
