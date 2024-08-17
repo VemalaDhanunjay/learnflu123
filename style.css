@@ -1,0 +1,213 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.user-page{
+  display: flex;
+  justify-content: space-between;
+  position: inherit;
+}
+.header{
+  padding: 10px;
+  box-shadow: 0px 0px 1px;
+  text-align: center;
+  /* border: 1px solid black; */
+  position: relative;
+}
+.header a{
+  text-decoration: none;
+  color: black;
+}
+.logo{
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+}
+.logo i{
+  transition: .2s ease-in-out;
+  padding: 10px;
+  border-radius: 10px;
+}
+.logo i:hover{
+  background-color: rgb(234, 234, 234);
+  border-radius: 10px;
+  transform: scale(105%);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.menu{
+  padding-top: 40px;
+  position: relative;
+}
+.menu #icons{
+  padding: 5px;
+}
+
+#icons i{
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 25px;
+  transition: .2s ease-in-out;
+}
+#icons i:hover{
+  background-color: rgb(234, 234, 234);
+  border-radius: 10px;
+  transform: scale(105%);
+  cursor: pointer;
+}
+.menu #icons img{
+  border-radius: 100px;
+  padding: 10px;
+  transition: .2s ease-in-out;
+  width: 50px;
+  position: relative;
+}
+#icons img:hover{
+  background-color: rgb(234, 234, 234);
+  border-radius: 10px;
+  transform: scale(105%);
+  cursor: pointer;
+}
+
+/* main starts here */
+.main{
+  width: 87%;
+  /* background-color: grey; */
+  padding: 20px 20px;
+  position: relative;
+}
+.profile .profile-items{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.profile-items .user-dp{
+  /* background-color: grey; */
+  padding: 0px 60px;
+}
+.user-dp img{
+  border-radius: 100%;
+  width: 150px;
+  aspect-ratio: 1/1;
+  height: auto;
+  box-shadow: 0px 0px 3px;
+  cursor: pointer;
+  background-color: white;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgb(242, 20, 254)), color-stop(0.67, rgb(234, 255, 0)));
+  background-image: -moz-linear-gradient(center bottom, rgb(14,173,173) 33%, rgb(43, 0, 255) 67% );
+  padding: 3px;
+  position: relative;
+}
+.profile-items .user-details{
+  padding: 10px;
+  text-align: left;
+}
+.profile-items .user-details .username-follow-msg-btn{
+  padding: 10px 0px;
+  display: flex;
+}
+.user-details .username-follow-msg-btn {
+  padding: 0px 0px;
+  font-size: 20px;
+}
+.user-details .username-follow-msg-btn h4{
+  font-weight: lighter;
+  cursor: pointer;
+}
+.user-details .username-follow-msg-btn i{
+  color: blue;
+  margin: 0px 10px;
+}
+.user-details .username-follow-msg-btn button{
+  padding: 10px 20px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 15%;
+  font-weight: 550;
+  cursor: pointer;
+}
+.post-following{
+  display: flex;
+}
+.post-following p{
+  text-align: justify;
+  padding: 20px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.post-following span{
+  font-weight: lighter;
+}
+/* .user-details .bio{
+  background-color: yellow;
+} */
+.user-details .bio p{
+  padding: 2px 0px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.user-details .bio p:nth-child(1){
+  font-weight: bold;
+}
+.user-details .bio span{
+  color: grey;
+  padding: 1px;
+  margin-top: 2px;
+}
+.user-details .bio p span:nth-child(3){
+  color: blue;
+}
+.user-details .bio p span:nth-last-child(1){
+  color: blue;
+}
+
+
+/* highlights */
+.hilights{
+  padding: 40px 20px;
+}
+.hilights .hightlights-items{
+  display: flex;
+}
+.hightlights-items .highlights-list{
+  padding: 0px 0px;
+  justify-content: space-evenly;
+}
+.hightlights-items .highlights-list img{
+  width: 50%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  padding: 2px;
+  border: 1px solid grey;
+}
+
+
+/* Post section */
+.post-section{
+  padding: 0px
+}
+.post-section .posts-list{
+  padding: 10px 300px;
+  display: inline-flex;
+}
+.post-section .posts-list p{
+  padding: 0px 30px;
+  cursor: pointer;
+}
+.posts-list p:nth-child(1){
+  font-weight: bold;
+}
+.post-section .all-posts .reels{
+  width: 80%;
+}
+
+.post-section .all-posts video{
+  aspect-ratio: 9/16;
+  width: 30%;
+  cursor: pointer;
+}
